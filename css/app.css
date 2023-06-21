@@ -308,6 +308,13 @@ img {
     font-size: 1.6rem;
     color: var(--primary);
 }
+.entrada__texto {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    font-size: 1.6rem;
+}
 
 .entrada__enlace {
     margin-top: 2rem;
