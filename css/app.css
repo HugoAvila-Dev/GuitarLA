@@ -239,28 +239,33 @@ img {
     background-size: cover;
     background-position: 50%;
 }
-@media (min-width: 768px) { 
+
+@media (min-width: 768px) {
     .cursos__grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
     }
 }
+
 .cursos__contenido {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-@media (min-width: 768px) { 
-    .cursos__contenido { 
+
+@media (min-width: 768px) {
+    .cursos__contenido {
         grid-column: 2 / 3;
     }
 }
+
 .cursos__texto {
     color: var(--blanco);
     text-align: center;
     font-size: 2.4rem;
 }
+
 .cursos__enlace {
     color: var(--blanco);
     margin-top: 2rem;
@@ -274,6 +279,7 @@ img {
     transition-property: background-color;
     transition-duration: .3s;
 }
+
 .cursos__enlace:hover {
     background-color: var(--primary);
     color: var(--blanco);
@@ -283,16 +289,19 @@ img {
     display: grid;
     gap: 4rem;
 }
-@media (min-width: 768px) { 
+
+@media (min-width: 768px) {
     .blog__grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media (min-width: 992px) { 
+
+@media (min-width: 992px) {
     .blog__grid {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
 .entrada__contenido {
     padding: 2rem;
 }
@@ -304,10 +313,12 @@ img {
     margin: 0;
     line-height: 1.2;
 }
+
 .entrada__fecha {
     font-size: 1.6rem;
     color: var(--primary);
 }
+
 .entrada__texto {
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -330,7 +341,50 @@ img {
     transition-property: background-color;
     transition-duration: .3s;
 }
+
 .entrada__enlace:hover {
     background-color: var(--primary);
     color: var(--blanco);
+}
+
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 768px) { 
+    .footer__nav {
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
+
+.footer {
+    margin-top: 5rem;
+    background-color: var(--negro);
+    padding: 5rem 0;
+}
+@media (min-width: 768px) { 
+    .footer__contenido {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer__enlace {
+    font-size: 2.8rem;
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.footer__enlace:hover {
+    color: var(--primary);
+}
+
+.footer__copyright {
+    font-size: 2.8rem;
+    color: var(--blanco);
+    font-weight: 700;
+    text-align: center;
 }
